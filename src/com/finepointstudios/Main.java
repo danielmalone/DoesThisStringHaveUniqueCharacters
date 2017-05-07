@@ -15,7 +15,7 @@ public class Main {
 
     private static boolean search() {
         for (int i = 0; i < word.length(); i++) {
-            char value = word.charAt(i);
+            char value = word.toLowerCase().charAt(i);
             if (list[value]) {
                 return true;
             }
